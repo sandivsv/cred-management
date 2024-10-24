@@ -19,9 +19,10 @@ import RightIcon from '@/components/icons/RightIcon.vue'
 import SettingIcon from '@/components/icons/SettingIcon.vue'
 import TransactionIcon from '@/components/icons/TransactionIcon.vue'
 import UploadIcon from '@/components/icons/UploadIcon.vue'
+import CloseIcon from '@/components/icons/CloseIcon.vue'
 
 
-
+import Modal from '@/components/Modal.vue'
 
 export default (app: any) => {
   // Icons here
@@ -43,11 +44,12 @@ export default (app: any) => {
   app.component('SettingIcon', SettingIcon)
   app.component('TransactionIcon', TransactionIcon)
   app.component('UploadIcon', UploadIcon)
+  app.component('CloseIcon', CloseIcon)
   
 
 
 
   // Component
-//   app.component('Modal', Modal)
+  app.component('Modal', Modal)
 
 }
